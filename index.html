@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>thenewboston</title>
+    <title>Simplicity</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
-
     
-   <nav class="navbar navbar-inverse">
+    <div class="collapse" id="exCollapsingNavbar">
+  <div class="bg-inverse p-a-1">
+    
+      
+      <nav class="navbar navbar-inverse">
     <div class="container-fluid">
 
         <!-- Logo -->
@@ -27,14 +29,49 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#">Search</a></li>
+                <li class="active"><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+        
+        
         </div>
 
     </div>
+      <div class="pull-xs-right">
+        
+        <form class="form-inline pull-xs-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-success-outline" type="submit">Search</button><p/>
+    </form>
+        </div>
 </nav>
+      
+    <!--<span class="text-muted">Toggleable via the navbar brand.</span>-->
+  </div>
+</div>
+    
+<nav class="navbar navbar-light bg-faded right">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+    &#9776;
+  </button>
+</nav>
+    <div>
+    
+    <ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#"></a></li>
+  <li class="active">Data</li>
+</ol>
+    </div>
+    
+    <div class="card">
+  <a href="newCase.html"><img class="card-img" src="images/AppIcon76x76@2x.png" alt="Card image"></a>
+  <div class="card-img-overlay">
+    <!--<p class="card-text">I'm text that has a background image!</p>-->
+  </div>
+</div>  
+    
     
     
     </body>
