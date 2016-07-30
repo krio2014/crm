@@ -9,42 +9,123 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
+ <div class="collapse" id="exCollapsingNavbar">
+  <div class="bg-inverse p-a-1">
+    
+      
+      <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
 
-<div class="container-fluid">
-                <div class="row">
-<!--                <div class="container">-->
-    <ul class="nav nav-tabs">
-  <li class="nav-item">
-    <a class="nav-link" href="newCase.html">Product</a>
-  </li>
         
         
+        <!-- Logo -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">SIMPLICITY</a>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="collapse navbar-collapse" id="mainNavBar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li class="active"><a href="newCase.html">New Case</a></li>
+                
+            </ul>
         
-  <li class="nav-item active">
-    <a class="nav-link active" href="correspondence.html">Correspondence</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Notes</a>
-  </li>
-</ul>
+        
+        </div>
+
     </div>
-    </div>
-<ul class="nav nav-pills">
+      
+</nav>
+      
+      </div>
+</div>
+    
+<!--      <div class="pull-xs-right">-->
+        
+        
+    
+<!--    <span class="text-muted">Toggleable via the navbar brand.</span>-->
   
-  <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">New Correspondence</a>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Email</a><br />
+    
+<!--<nav class="navbar navbar-light bg-faded right">--><p/>
+          <button class="navbar-toggler-fixed-top" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+            &#9776;
+          </button>
+</nav>Menu
+    
+     <form class="form-inline pull-xs-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-success-outline" type="submit">Search</button><p/>
+    </form>
+<!--        </div>-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!--                <div class="container">-->
+              <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+
+
+
+              <li class="nav-item active">
+                <a class="nav-link active" href="correspondence.html">Correspondence</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Notes</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+        <div class="col-xs-2">
+            <p/>
+    <ul class="nav nav-pills">
+  
+        <li class="nav-item dropdown">
+<!--            <a class="nav-link btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">New Correspondence</a>-->
+            
+            <button class="btn btn-primary dropdown toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            New Communication
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+               <div class="container col-xs-1">
+                <a href="#" data-toggle="modal" data-target="#login-modal">Email</a><p/>
+
+<!--                <a class="dropdown-item disabled" href="#">Letter</a>-->
+<!--                   <br />-->
+                   Letter
+                   <br />
+                   Text
+<!--              <a class="dropdown-item disabled" href="#">Text</a>-->
+</div>
+            </div>
+        </li>
+    </ul>
+    
+<!--    </div></div></div>-->
+</div>
+<!--        <a class="dropdown-item" href="#">Email</a><br />-->
         
         <!-- New email modal -->
         
         <!-- Button trigger modal -->
+<!--
 <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#myModal">
   Email
 </button>
+-->
 
 <!-- Modal -->
-<div class="modal" id="myModal" tabindex="-1" role="dialog"
+<!--<div class="modal" id="myModal" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel1" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -64,26 +145,22 @@
     </div>
   </div>
 </div>
-        
+        -->
         <!-- End new email model -->
-      <a class="dropdown-item" href="#">Letter</a><br />
-      <a class="dropdown-item" href="#">Text</a>
+      
         
-    </div>
-  </li>
-</ul>
-    
-    </div>
+     
+<!--    </div>-->
     
     
     
    
-<!-- Button trigger modal -->
+<!-- Button trigger modal
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
 </button>
 
-<!-- Modal -->
+Modal 
 <div class="modal" id="myModal" tabindex="-1" role="dialog"
      aria-labelledby="myModalLabel1" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -103,8 +180,102 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
     
+    
+    
+    <!-- other model -->
+  
+
+        
+				<!--<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+					
+				  <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+				</div>
+        -->
+        
+        
+        
+        
+        
+        <!-- compose window form-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+
+            <div class="row">
+            <div class="col-lr-6">  
+            <div class="modal-dialog">         
+                
+        <div class="modal-body">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                  <h4 class="modal-title">Compose</h4>
+              </div>
+<p/>
+                <form role="form" class="form-horizontal">
+                  <div class="form-group">
+                      <label class="col-lg-2 control-label">To</label>
+                      <div class="col-lg-9">
+                          <input type="text" placeholder="" id="inputEmail1" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-lg-2 control-label">Cc / Bcc</label>
+                      <div class="col-lg-9">
+                      <input type="text" placeholder="" id="cc" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputFile" class="col-lg-2 control-label"> Attachment</label>
+                      <div class="col-lg-9">
+                      <input type="file" class="form-control-file" id="exampleInputFile">
+                      </div>
+                    </div>
+                  <div class="form-group">
+                      <label class="col-lg-2 control-label">Subject</label>
+                      <div class="col-lg-9">
+                          <input type="text" placeholder="" id="inputPassword1" class="form-control">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label class="col-lg-2 control-label">Message</label>
+                      <div class="col-lg-9">
+                          <textarea rows="10" cols="30" class="form-control" id="" name=""></textarea>
+                      </div>
+                  </div>
+                    <div class="row">
+                    <div class="form-group">
+                        <div class="col-lg-12">
+                        <div class="col-lg-13">
+                        <div class="col-lg-11">
+<!--                            <button type="button" class="btn btn-primary ">Send</button>-->
+                        
+                        <button type="cancel" class="btn btn-danger pull-right">Cancel</button>
+                            <button type="submit" class="btn btn-success pull-right">Submit</button><p />&nbsp;	
+                        </div>
+                        </div>
+                        </div>
+                    </div></div>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+		</div>
+		  
+    
+    <!-- other model end-->
     
     
     </body>
