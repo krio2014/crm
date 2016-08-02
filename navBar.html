@@ -9,70 +9,66 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
-    <div class="collapse" id="exCollapsingNavbar">
+ <div class="collapse" id="exCollapsingNavbar">
   <div class="bg-inverse p-a-1">
     
       
       <nav class="navbar navbar-inverse">
     <div class="container-fluid">
 
+        
+        
         <!-- Logo -->
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">SIMPLICITY</a>
+            <a href="index.html" class="navbar-brand">SIMPLICITY</a>
         </div>
 
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-                <li><a href="#">Search</a></li>
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li class="active"><a href="newCase.html">New Case</a></li>
+                
             </ul>
         
         
         </div>
 
     </div>
-      <div class="pull-xs-right">
+      
+</nav>
+     
+      <!--<div class="pull-xs-right">
         
         <form class="form-inline pull-xs-right">
       <input class="form-control" type="text" placeholder="Search">
       <button class="btn btn-success-outline" type="submit">Search</button><p/>
     </form>
-        </div>
-</nav>
-      
-    <!--<span class="text-muted">Toggleable via the navbar brand.</span>-->
-  </div>
+        </div>-->
+      </div>
 </div>
     
-<nav class="navbar navbar-light bg-faded right">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+    <div class="pull-xs-right">
+        
+        
+    
+<!--    <span class="text-muted">Toggleable via the navbar brand.</span>-->
+  
+    
+<!--<nav class="navbar navbar-light bg-faded right">--><p/>
+  <button class="navbar-toggler-fixed-top" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" id="colMenu">
     &#9776;
   </button>
-</nav>
-    <!--<div>-->
-    
-    <ol class="breadcrumb">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="newCase.html">Case</a></li>
-  <li class="active">Data</li>
-</ol>
-    <!--</div>-->
-    
-    <div class="card">
-  <a href="newCase.html"><img class="card-img" src="images/AppIcon76x76@2x.png" alt="Card image"></a>
-  <div class="card-img-overlay">
-    <!--<p class="card-text">I'm text that has a background image!</p>-->
-  </div>
-</div>  
+</nav><label for="colMenu">Menu</label>
     
     
-    
-    </body>
-</html>
+    <form class="form-inline pull-xs-right">
+      <input class="form-control" type="text" placeholder="Search">
+      <button class="btn btn-success-outline" type="submit">Search</button><p/>
+    </form>
+        </div>

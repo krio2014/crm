@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Simplicity - New Case</title>
+    <title>Simplicity</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -61,10 +61,10 @@
   
     
 <!--<nav class="navbar navbar-light bg-faded right">--><p/>
-  <button class="navbar-toggler-fixed-top" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+  <button class="navbar-toggler-fixed-top" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" id="colMenu">
     &#9776;
   </button>
-</nav>
+</nav><label for="colMenu">Menu</label>
     
     <form class="form-inline pull-xs-right">
       <input class="form-control" type="text" placeholder="Search">
@@ -299,7 +299,7 @@
     </div>
     
     <div class="container-fluid">
-                <div class="row">
+    <div class="row">
 <!--                <div class="container">-->
     <ul class="nav nav-tabs">
   <li class="nav-item active">
@@ -314,6 +314,10 @@
   <li class="nav-item">
     <a class="nav-link disabled" href="#">Notes</a>
   </li>
+<li>
+<!--    <a class="nav-link disabled" href="#">File attachments</a>-->
+    <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">File Attachments</a>
+  </li>
 </ul>
     </div>
     </div>
@@ -321,20 +325,32 @@
             
     </div>
     
-    <!--
-    <div class="container-fluid">
-    <progress class="progress-fluid" value="25" max="100">25%</progress>
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+
+        <div class="row">
+            <div class="col-lr-6">  
+                <div class="modal-dialog">         
+
+                    <div class="modal-body">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="exampleInputFile" class="col-lg-2 control-label"> Attachment</label>
+                                        <div class="col-lg-9">
+                                            <input type="file" class="form-control-file" id="exampleInputFile">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
-    <div class="container">
     
-        <progress class="progress-fluid" value="25" max="100" width="100%">
-  <div class="progress-fluid">
-    <span class="progress-bar" style="width: 100%;">75%</span>
-  </div>
-</progress>
-    
-    </div></div>-->
     <div class="container-fluid">
     
 <h2>Timeline </h2>    
@@ -362,15 +378,15 @@
                     <form>
                       <div class="form-group">
                         <label for="exampleInput1">Field 1</label>
-                        <input type="text" class="form-control" id="exampleInput1" placeholder="Jane Doe">
+                        <input type="text" class="form-control" id="exampleInput1" placeholder="Some Text">
                       </div>
                       <div class="form-group">
                         <label for="exampleInput2">Field 2</label>
-                        <input type="email" class="form-control" id="exampleInput2" placeholder="jane.doe@example.com">
+                        <input type="email" class="form-control" id="exampleInput2" placeholder="Some Text">
                       </div>
                         <div class="form-group">
                           <label for="exampleInput3">Field 3</label>
-                        <input type="text" class="form-control" id="exampleInput3" placeholder="Jane Doe">
+                        <input type="text" class="form-control" id="exampleInput3" placeholder="Some Text">
                         </div></div>
 
                       <!--<button type="submit" class="btn btn-primary">Send invitation</button>-->
@@ -386,15 +402,15 @@
                     <form>
                       <div class="form-group">
                         <label for="exampleInput1">Field 1</label>
-                        <input type="text" class="form-control" id="exampleInput1" placeholder="Jane Doe">
+                        <input type="text" class="form-control" id="exampleInput1" placeholder="Some Text">
                       </div>
                       <div class="form-group">
                         <label for="exampleInput2">Field 2</label>
-                        <input type="email" class="form-control" id="exampleInput2" placeholder="jane.doe@example.com">
+                        <input type="email" class="form-control" id="exampleInput2" placeholder="Some Text">
                       </div>
                         <div class="form-group">
                           <label for="exampleInput3">Field 3</label>
-                        <input type="text" class="form-control" id="exampleInput3" placeholder="Jane Doe">
+                        <input type="text" class="form-control" id="exampleInput3" placeholder="Some Text">
                         </div></div>
 
                       <!--<button type="submit" class="btn btn-primary">Send invitation</button>-->
@@ -413,6 +429,22 @@
 
 </div>
 <hr/>
+
+
+<!--
+    <div class="container-fluid">
+    <progress class="progress-fluid" value="25" max="100">25%</progress>
+    </div>
+    
+    <div class="container">
+    
+        <progress class="progress-fluid" value="25" max="100" width="100%">
+  <div class="progress-fluid">
+    <span class="progress-bar" style="width: 100%;">75%</span>
+  </div>
+</progress>
+    
+    </div></div>-->
 <!--<nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
   <a class="navbar-brand" href="#">Fixed bottom</a>
   <a class="navbar-brand" href="#">Fixed bottom</a>
